@@ -13,7 +13,7 @@
     line-height: 1.5em
 
 .profile-block
-    padding: 15px 20px
+    padding: 15px 20px 15px 20px
     border-bottom: 1px solid color-border
     &:last-child
         border-bottom: none
@@ -33,6 +33,9 @@
                 margin: 10px auto 20px
                 width: profile-avatar-size
                 height: profile-avatar-size
+                -moz-border-radius: (profile-avatar-size / 2)
+                -webkit-border-radius: (profile-avatar-size / 2)
+                border-radius: (profile-avatar-size / 2)
             #name, #title, #location
                 display: block
                 text-align: center
@@ -42,6 +45,7 @@
             #location
                 font-size: font-size - 2
                 margin-top: 5px
+                margin-bottom: 10px
                 color: color-default + #444
                 .fa
                     margin-right: 5px
